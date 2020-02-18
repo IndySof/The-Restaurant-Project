@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>TRP - Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>The Restaurant Project : Login</h3>
+    <input type="email" placeholder="User" id="email_field" />
+    <input type="password" placeholder="Password" id="password_field" />
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome Chef</h3>
+    <p id="user_para">You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyCJZkWAffvdW2KXbNrH_qMyaDg7O_L1Gt0",
+    authDomain: "the-restaurant-project.firebaseapp.com",
+    databaseURL: "https://the-restaurant-project.firebaseio.com",
+    projectId: "the-restaurant-project",
+    storageBucket: "the-restaurant-project.appspot.com",
+    messagingSenderId: "779581151296",
+    appId: "1:779581151296:web:2db8fcff1062133f7667a5",
+    measurementId: "G-94HYG87WGC"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
