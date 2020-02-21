@@ -12,7 +12,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     if(user != null){
 
       var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+      document.getElementById("user_para").innerHTML = "Logged as : " + email_id;
 
     }
 
@@ -27,7 +27,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
 function redirection(){
-  window.location = "/role-selection";
+  window.location = "/role";
 }
 function login(){
 
