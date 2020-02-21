@@ -4,6 +4,8 @@ The Restaurant Project, for short TRP, is a picking-order system to make the wai
 
 For the moment, only the login system work.
 
+UPDATE : Design and minor bugs fixed 
+
 ## The Goal
 
 At the beginning, it was a school project, but I decided to post it because I think it could help people who develop this kind of system. The system is supposed to take orders from a smartphone and display them on a screen in the kitchen, then confirm the order in the kitchen (call a waiter to take the order).
@@ -38,7 +40,11 @@ Once, you have to set up a project on the Google Console (Firebase) and edit in 
   firebase.initializeApp(config);
 </script>
 ```
-You are now set, you have to define the project usage (web), then you will be able to try if it work with 
+You are now set, you have to define the project usage (web), and download somes more files :
+```bath
+npm install
+```
+then you will be able to try if it work with :
 ```bath
 firebase serve
 ```
