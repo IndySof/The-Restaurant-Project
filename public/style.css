@@ -9,6 +9,8 @@ body {
 input, button {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .main-div, .loggedin-div {

@@ -5,8 +5,10 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
 
-    var user = firebase.auth().currentUser;
 
+    var user = firebase.auth().currentUser;
+    
+    
     if(user != null){
 
       var email_id = user.email;
@@ -23,6 +25,10 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
+
+function redirection(){
+  window.location = "/role-selection";
+}
 function login(){
 
   var userEmail = document.getElementById("email_field").value;
