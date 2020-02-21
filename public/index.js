@@ -12,6 +12,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     if(user != null){
 
       var email_id = user.email;
+      document.getElementById("user_para").style.color = "#fff";
       document.getElementById("user_para").innerHTML = "Logged as : " + email_id;
 
     }

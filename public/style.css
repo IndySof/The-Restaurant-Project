@@ -1,11 +1,25 @@
 body {
-  background: #fff;
   padding: 0px;
   margin: 0px;
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
+  background-image: url(https://cdn.hipwallpaper.com/i/92/18/b42iYx.png);
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
+h4{
+  font-size:24px;
+  color: #fff;
+}
+
+
+h3{
+  font-size: 32px;
+  color: #fff;
+
+}
 input, button {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
